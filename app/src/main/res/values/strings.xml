@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">App Arrahman</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="event">Event</string>
+    <string name="data">Data</string>
+    <string name="setting">Setting</string>
+    <string name="selamat_datang_di_nukmi_ar_rahman_teknokrat">Selamat Datang di\nUKMI Ar-Rahman Teknokrat</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="masuk">Masuk</string>
+    <string name="lupa_password">Lupa Password</string>
+    <string name="daftar">Daftar</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="npm">NPM</string>
+    <string name="jurusan">Jurusan</string>
+    <string name="no_hp_whatsapp">No HP/Whatsapp</string>
+    <string name="daftar_sebagai">Daftar Sebagai:</string>
+    <string name="agreement">Saya menyetujui data yang saya isikan dapat diketahui oleh seseorang untuk kepentingan basis data dari sistem ini selagi tidak disebarluaskan</string>
+    <string name="nama_user">Nama User</string>
+    <string name="penjelasan_divisi">Penjelasan Divisi</string>
+    <string name="judul_cardview">Judul CardView</string>
+    <string name="descs">Lorem ipsum dolor sit amet consecuer ametur de sans</string>
+    <string name="mode_gelap">Mode Gelap</string>
+    <string name="bahasa">Bahasa</string>
+    <string name="bagikan">Bagikan</string>
+    <string name="tentang_aplikasi">Tentang Aplikasi</string>
+    <string name="kebijakan_privasi">Kebijakan Privasi</string>
+    <string name="keluar">Keluar</string>
+    <string name="label">Bidang Kaderisasi</string>
+    <string name="oprec">Open Recruitment UKMI Ar-Rahman Gelombang 2 2022</string>
+    <string name="cari_kegiatan">Cari Kegiatan</string>
+    <string name="cari_kader">Cari Kader</string>
+    <string name="kajian_syiar_islam">Bidang Kajian Syiar Islam</string>
+    <string name="bimbingan_belajar_qur_an">Biro Bimbingan Belajar Qur\'an</string>
+    <string name="akademik">Biro Akademik</string>
+    <string name="humas_dan_kemediaan">Biro Humas dan Kemediaan</string>
+    <string name="dana_dan_usaha">Biro Dana dan Usaha</string>
+    <string name="kemuslimahan">Bidang Kemuslimahan</string>
+    <string name="amanah_yang_pernah_diemban">Amanah yang pernah diemban (enter untuk baris baru)</string>
+    <string name="tambah_data">Tambah Data</string>
+    <string name="presidium">Presidium</string>
+    <string name="download_progja_presidium">Download Progja Presidium</string>
+    <string name="amanah_saat_ini">Amanah saat ini</string>
+    <string name="mutabaah">Mutabaah</string>
+    <string name="daftar_amalan_harian">Daftar Amalan Harian</string>
+    <string name="sholat_dhuha">Sholat Dhuha</string>
+    <string name="tambah_amalan_harian">Tambah Amalan Harian</string>
+    <string name="nama_amalan">Nama Amalan</string>
+    <string name="mode_pengingat">Mode Pengingat</string>
+    <string name="alarm">Alarm</string>
+    <string name="notifikasi">Notifikasi</string>
+    <string name="atur_alarm">Atur Alarm</string>
+    <string name="atur_notifikasi">Atur Notifikasi</string>
+    <string name="ichwan_sholihin">Ichwan Sholihin</string>
+    <string name="npm_19312131">NPM : 19312131</string>
+    <string name="prodi_informatika">Prodi : Informatika</string>
+    <string name="ketua_bidang">Ketua Bidang</string>
+    <string name="amanah2">Amanah yang pernah diemban :</string>
+    <string name="amanah3">-Ketuplak Mabit (2019)\n-Ketuplak Mubes (2020)\n-PJ Acara PI 14 (2021)</string>
+    <string name="aktif">Aktif</string>
+    <string name="divisi">Divisi</string>
+    <string name="download_buku_risalah_dakwah_ukmi">Download Buku Risalah Dakwah UKMI</string>
+    <string name="belum_punya_akun_daftar">Belum punya akun? Daftar</string>
+    <string name="masukkan_kode_referral_admin">Masukkan kode referral admin</string>
+    <string-array name="amanah">
+        <item>Ketua Umum</item>
+        <item>Wakil Ketua Umum</item>
+        <item>Sekertaris Umum</item>
+        <item>Bendahara Umum</item>
+        <item>Ketua Bidang</item>
+        <item>Ketua Biro</item>
+        <item>Sekertaris Bidang</item>
+        <item>Sekertaris Biro</item>
+        <item>Bendahara Bidang</item>
+        <item>Bendahara Biro</item>
+        <item>Staf/Anggota</item>
+    </string-array>
+
+    <string-array name="pos_divisi">
+        <item>Presidium</item>
+        <item>Kaderisasi</item>
+        <item>KSI</item>
+        <item>Kemuslimahan</item>
+        <item>BBQ</item>
+        <item>Akademik</item>
+        <item>HMD</item>
+        <item>Danus</item>
+    </string-array>
+
+    <string-array name="tipe_user">
+        <item>User</item>
+        <item>Admin</item>
+    </string-array>
+</resources>

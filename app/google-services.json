@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "508698653043",
+    "project_id": "app-arrahman-1640834546656",
+    "storage_bucket": "app-arrahman-1640834546656.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:508698653043:android:475959b7253649b4245506",
+        "android_client_info": {
+          "package_name": "com.team.apparrahman"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "508698653043-tebilep5nffv00vfcbn5k7jkensbpjuu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAaJM4JR-p02COEe8jkWdMeIvkrHBFyl0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "508698653043-tebilep5nffv00vfcbn5k7jkensbpjuu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_layout"
+    tools:context=".verifuser.RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/shape_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:text="@string/selamat_datang_di_nukmi_ar_rahman_teknokrat"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view"
+            android:layout_marginStart="24dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/daftar"
+            android:textColor="@color/secondary"
+            android:textSize="18sp" />
+
+
+        <EditText
+            android:id="@+id/reg_name"
+            style="@style/MarginTextBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tx"
+            android:background="@drawable/shape_textbox"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="@string/nama_lengkap"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:textColor="@color/secondary"/>
+
+        <EditText
+            android:id="@+id/reg_npm"
+            style="@style/MarginTextBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reg_name"
+            android:background="@drawable/shape_textbox"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="@string/npm"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:textColor="@color/secondary"/>
+
+        <EditText
+            android:id="@+id/reg_jurusan"
+            style="@style/MarginTextBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reg_npm"
+            android:background="@drawable/shape_textbox"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="@string/jurusan"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:textColor="@color/secondary"/>
+
+        <EditText
+            android:id="@+id/reg_nohp"
+            style="@style/MarginTextBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reg_jurusan"
+            android:background="@drawable/shape_textbox"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="@string/no_hp_whatsapp"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:inputType="phone"
+            android:textColor="@color/secondary"/>
+
+        <EditText
+            android:id="@+id/reg_email"
+            style="@style/MarginTextBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reg_nohp"
+            android:background="@drawable/shape_textbox"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:textColor="@color/secondary"/>
+
+        <EditText
+            android:id="@+id/reg_pw"
+            style="@style/MarginTextBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reg_email"
+            android:background="@drawable/shape_textbox"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="@string/password"
+            android:padding="12dp"
+            android:textColor="@color/secondary"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tx3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reg_pw"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/daftar_sebagai"
+            android:textColor="@color/secondary"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/spinner_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reg_pw"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="24dp"
+            android:layout_toEndOf="@id/tx3" />
+
+        <EditText
+            android:id="@+id/reg_admin"
+            style="@style/MarginTextBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tx3"
+            android:background="@drawable/shape_textbox"
+            android:visibility="gone"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="@string/masukkan_kode_referral_admin"
+            android:padding="12dp"
+            android:textColor="@color/secondary"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reg_admin"
+            android:layout_margin="24dp"
+            android:fontFamily="@font/source_sans"
+            android:text="@string/agreement"
+            android:textColor="@color/secondary"
+            android:textSize="14sp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/agreement"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/ic_arrow_forward" />
+    </RelativeLayout>
+</ScrollView>

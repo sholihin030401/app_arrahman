@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_layout"
+    tools:context=".data.AddDataActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/tambah_data"
+            android:textColor="@color/secondary"
+            android:textSize="18sp" />
+
+
+        <EditText
+            android:id="@+id/data_name"
+            style="@style/MarginTextBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tx"
+            android:background="@drawable/shape_textbox"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="@string/nama_lengkap"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:textColor="@color/secondary"/>
+
+        <EditText
+            android:id="@+id/data_npm"
+            style="@style/MarginTextBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/data_name"
+            android:background="@drawable/shape_textbox"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="@string/npm"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:textColor="@color/secondary"/>
+
+        <EditText
+            android:id="@+id/data_jurusan"
+            style="@style/MarginTextBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/data_npm"
+            android:background="@drawable/shape_textbox"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="@string/jurusan"
+            android:padding="12dp"
+            android:textColor="@color/secondary"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tx2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/data_jurusan"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/amanah_saat_ini"
+            android:textColor="@color/secondary"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/spinner_amanah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/data_jurusan"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="24dp"
+            android:layout_toEndOf="@id/tx2" />
+
+        <TextView
+            android:id="@+id/tx3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tx2"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/divisi"
+            android:textColor="@color/secondary"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/spinner_divisi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinner_amanah"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="24dp"
+            android:layout_toEndOf="@id/tx3" />
+
+        <EditText
+            android:id="@+id/data_amanah"
+            style="@style/MarginTextBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tx3"
+            android:background="@drawable/shape_textbox"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="@string/amanah_yang_pernah_diemban"
+            android:inputType="textMultiLine"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:textColor="@color/secondary"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/data_amanah"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/ic_arrow_forward" />
+
+    </RelativeLayout>
+</ScrollView>

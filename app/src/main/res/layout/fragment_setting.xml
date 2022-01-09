@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_layout"
+    tools:context=".setting.SettingFragment"
+    tools:ignore="SpeakableTextPresentCheck">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_account"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="5dp"/>
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nama_user"
+            android:textSize="17sp"
+            android:textColor="@color/secondary"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_toEndOf="@id/img"/>
+
+        <TextView
+            android:id="@+id/mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textSize="17sp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_toEndOf="@id/img"
+            android:layout_below="@id/username"/>
+
+        <TextView
+            android:id="@+id/txmode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mode_gelap"
+            android:textColor="@color/secondary"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_below="@id/mail"
+            android:layout_marginTop="48dp"
+            android:layout_marginStart="24dp"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/txmode"
+            android:layout_below="@id/mail"
+            android:layout_marginTop="36dp"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/txlang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bahasa"
+            android:textColor="@color/secondary"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_below="@id/txmode"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="24dp"
+            app:drawableStartCompat="@drawable/ic_language"
+            android:drawablePadding="5dp"/>
+
+        <TextView
+            android:id="@+id/txshare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bagikan"
+            android:textColor="@color/secondary"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_below="@id/txlang"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="24dp"
+            app:drawableStartCompat="@drawable/ic_share"
+            android:drawablePadding="5dp"/>
+
+        <TextView
+            android:id="@+id/txinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tentang_aplikasi"
+            android:textColor="@color/secondary"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_below="@id/txshare"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="24dp"
+            app:drawableStartCompat="@drawable/ic_info"
+            android:drawablePadding="5dp"/>
+
+        <TextView
+            android:id="@+id/txpolicy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kebijakan_privasi"
+            android:textColor="@color/secondary"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_below="@id/txinfo"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="24dp"
+            app:drawableStartCompat="@drawable/ic_policy"
+            android:drawablePadding="5dp"/>
+
+        <TextView
+            android:id="@+id/txlogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/keluar"
+            android:textColor="@color/secondary"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_below="@id/txpolicy"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="24dp"
+            app:drawableStartCompat="@drawable/ic_logout"
+            android:drawablePadding="5dp"/>
+    </RelativeLayout>
+</ScrollView>

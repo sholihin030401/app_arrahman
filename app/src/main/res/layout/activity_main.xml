@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_layout"
+    tools:context=".MainActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/shape_bg_main" />
+
+    <ImageButton
+        android:id="@+id/btn_menu_nav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_menu"
+        android:background="@android:color/transparent"
+        android:layout_margin="24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/nama_user"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:layout_toEndOf="@id/btn_menu_nav"
+        android:layout_marginTop="24dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_info_main"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_below="@id/btn_menu_nav"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="8dp"/>
+
+    <FrameLayout
+        android:id="@+id/container_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="80dp"
+        android:layout_below="@id/cv_info_main" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="14dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="8dp"
+        android:layout_alignParentBottom="true">
+        <com.ismaeldivita.chipnavigation.ChipNavigationBar
+            android:id="@+id/chipbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:background="#F8F8F8"
+            android:padding="5dp"
+            app:cnb_addBottomInset="true"
+            app:cnb_addLeftInset="true"
+            app:cnb_addRightInset="true"
+            app:cnb_orientationMode="horizontal"
+            app:cnb_menuResource="@menu/main_menu"/>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

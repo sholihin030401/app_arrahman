@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_layout"
+    tools:context=".mutabaah.AddMutabaahActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tambah_amalan_harian"
+            android:textSize="18sp"
+            android:textColor="@color/secondary"
+            android:fontFamily="@font/poppins_medium"
+            style="@style/MarginTextBox"/>
+
+        <EditText
+            android:id="@+id/nama_amalan"
+            style="@style/MarginTextBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tx"
+            android:background="@drawable/shape_textbox"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="@string/nama_amalan"
+            android:padding="12dp"
+            android:textColor="@color/secondary"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tx2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mode_pengingat"
+            android:textSize="16sp"
+            android:textColor="@color/secondary"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_below="@id/nama_amalan"
+            style="@style/MarginTextBox"/>
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/tx2"
+            android:layout_marginStart="24dp">
+
+            <RadioButton
+                android:id="@+id/rb_alarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alarm"
+                android:textSize="16sp"
+                android:textColor="@color/secondary"
+                android:checked="true"
+                android:fontFamily="@font/poppins_medium"/>
+
+            <RadioButton
+                android:id="@+id/rb_notif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/notifikasi"
+                android:textSize="16sp"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/secondary"
+                android:fontFamily="@font/poppins_medium"/>
+        </RadioGroup>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btn_alarm"
+            android:layout_marginStart="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="6dp"
+            app:cardCornerRadius="24dp"
+            android:layout_below="@id/rg"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tx_alarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/atur_alarm"
+                android:textColor="@color/reds"
+                android:textSize="16sp"
+                android:drawablePadding="5dp"
+                app:drawableStartCompat="@drawable/ic_alarm" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btn_notifikasi"
+            android:layout_marginStart="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="6dp"
+            app:cardCornerRadius="24dp"
+            android:layout_below="@id/rg"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/tx_notifikasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/atur_notifikasi"
+                android:textColor="@color/reds"
+                android:textSize="16sp"
+                android:drawablePadding="5dp"
+                app:drawableStartCompat="@drawable/ic_notifications" />
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_alarm"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/ic_arrow_forward" />
+    </RelativeLayout>
+</ScrollView>

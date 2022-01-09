@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_layout"
+    tools:context=".home.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/penjelasan_divisi"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/secondary"
+        android:layout_margin="24dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_divisi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tx" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btn_download_progja"
+        style="@style/MarginTextBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rv_divisi"
+        android:elevation="6dp"
+        app:cardCornerRadius="24dp">
+
+        <TextView
+            android:id="@+id/tx_progja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/download_buku_risalah_dakwah_ukmi"
+            android:textColor="@color/secondary"
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/ic_download" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
